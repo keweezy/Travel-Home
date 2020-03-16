@@ -4,10 +4,28 @@
   <meta charset="utf-8">
   <title>Aria</title>
   <base href="/">
+  <!-- <link href="./assets/styles/bootstrap.css" rel="stylesheet"> -->
+  <link href="./assets/styles/fontawesome-all.css" rel="stylesheet">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 </head>
-<body>
+<body data-spy="scroll" data-target=".fixed-top">
   <app-root></app-root>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/morphext.min.js"></script>
+  
+  <script>
+    $( document ).ready(function() {
+      $("#js-rotating").Morphext({
+        animation: "bounceIn",
+        separator: ",",
+        speed: 2000,
+        complete: function () {
+        }
+      });
+    });
+  </script>
 </body>
 </html>
